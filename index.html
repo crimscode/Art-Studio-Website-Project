@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!-- 
+Цель: завершить сайт арт студии и изучить оставшиеся свойства FlexBox.
+Повторение;
++ Создаем четвертую секцию. Знакомимся с basis повторяем grow;
++ Делаем адаптив для секций;
++ Конец первой части и выводы;
++ Конец 1 части. Выводы;
++ Домашнее задание №1;
++ Верстаем галерею;
++ Добавляем динамики в галерею и изучаем order;
+- Верстаем последнюю секцию с формой;
+- Стилизуем секцию. Изучаем shrink и flex;
+- Стилизуем форму и завершаем сайт;
+- Подведение итогов и выводы ;
+- Домашнее задание 2.
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Art Studio</title>
+</head>
+
+<body>
+    <div class="nav-menu">
+        <a href="#header" class="menu-item logo">
+            <img src="img/icons/site-logo.svg" alt="Logo" class="logo-img">
+        </a>
+
+        <a href="#about" class="menu-item">
+            <img src="img/icons/section2-ic.svg" alt="About" class="item-img">
+        </a>
+
+        <a href="#advantages" class="menu-item">
+            <img src="img/icons/section3-ic.svg" alt="Advantages" class="item-img">
+        </a>
+
+        <a href="#photography" class="menu-item">
+            <img src="img/icons/section4-ic.svg" alt="Photographer" class="item-img">
+        </a>
+
+        <a href="#gallery" class="menu-item">
+            <img src="img/icons/section5-ic.svg" alt="Portfolio" class="item-img">
+        </a>
+        
+        <a href="#contact" class="menu-item">
+            <img src="img/icons/section6-ic.svg" alt="Contact" class="item-img">
+        </a>
+    </div>
+
+    <div class="social">
+        <a href="#" class="social-item">
+            <img src="img/icons/social-fb-ic.svg" alt="Facebook" class="social-item-image">
+        </a>
+        <a href="#" class="social-item">
+            <img src="img/icons/social-vk-ic.svg" alt="VKontackte" class="social-item-image">
+        </a>
+        <a href="#" class="social-item">
+            <img src="img/icons/social-tiktok-ic.svg" alt="TikTok" class="social-item-image">
+        </a>
+        <a href="#" class="social-item">
+            <img src="img/icons/social-inst-ic.svg" alt="Instagram" class="social-item-image">
+        </a>
+    </div>
+
+    <div class="header" id="header">
+        <div class="header-left">
+            <div class="color dark-blue"></div>
+            <div class="color red"></div>
+            <div class="color yellow"></div>
+            <div class="color light-blue"></div>
+        </div>
+        <div class="header-right">
+            <h1 class="header-title">Art <span>Studio</span></h1>
+            <div class="header-branches">
+                <p class="branch-item">photography</p>
+                <p class="branch-item">art</p>
+                <p class="branch-item">design and branding</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-content">
+            <div class="about-content-left">
+                <h2 class="about-title">Who are we?</h2>
+                <p class="about-text">Our team creates awesome designs and branding. We do them with quality. Among our
+                    clients we have made cool commisions and in the long run we did well.
+            </div>
+            <div class="about-content-right">
+                <div class="about-rect rect-1"></div>
+                <div class="about-rect rect-2"></div>
+                <div class="about-rect rect-3"></div>
+            </div>
+        </div>
+        <div class="about-background">
+            <p class="bg-text">Get to know us</p>
+        </div>
+    </div>
+
+    <div class="advantages" id="advantages">
+        <div class="advantages-content">
+            <h2 class="advantages-title">Modern design</h2>
+            <p class="advantages-text">We destroy steriotypes, we make cool designs and make MASTERPIECES</p>
+            <img src="img/pictures/3rd-section-img.png" alt="Advantages Image" class="advantages-image">
+        </div>
+        <div class="advantages-background">
+            <p class="bg-text">Our speciality</p>
+        </div>
+    </div>
+
+    <div class="photography" id="photography">
+        <div class="photography-left">
+
+        </div>
+        <div class="photography-right">
+            <div class="photography-content">
+                <h2 class="photography-title">And also...</h2>
+                <p class="photography-text">We have cool photographers, which can take photographs for you</p>
+            </div>
+            <div class="photography-bg">
+                <p class="bg-text">We are full of suprsises</p>
+                <div class="bg-image"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <h2 class="gallery-title">Our Portfolio</h2>
+        <div class="gallery-content">
+            <img src="img/pictures/gallery1.png" alt="item-1" class="gallery-item item-1">
+            <img src="img/pictures/gallery2.png" alt="item-2" class="gallery-item item-2">
+            <img src="img/pictures/gallery3.png" alt="item-3" class="gallery-item item-3">
+            <img src="img/pictures/gallery4.png" alt="item-4" class="gallery-item item-4">
+            <img src="img/pictures/gallery5.png" alt="item-5" class="gallery-item item-5">
+            <img src="img/pictures/gallery6.png" alt="item-6" class="gallery-item item-6">
+            <img src="img/pictures/gallery7.png" alt="item-7" class="gallery-item item-7">
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="left-side">
+
+        </div>
+        <div class="mid-side">
+            <h2 class="contact-title">Contact us</h2>
+            <form class="contact-form" action="#" method="post">
+                
+                <label class="form-label" for="name">Name</label>
+                <input class="text-input" type="text" id="name" name="name" placeholder="Ivan Ivanov">
+
+                <label class="form-label" for="email">Email</label>
+                <input class="text-input" type="email" id="email" placeholder="example@email.com">
+
+                <label class="form-label" for="iscompany">Legal Entity</label>
+                <select class="select-input" name="iscompany" id="iscompany">
+                    <option value="yes">Juridical person</option>
+                    <option value="no">Individual person</option>
+                </select>
+
+                <label class="form-label" for="agreement">You agree with our Privacy policy</label>
+                <input class="checkinput" type="checkbox" id="agreement" name="agreement">
+                <button class="form-button">Send form</button>
+            </form>
+        </div>
+        <div class="right-side">
+
+        </div>
+    </div>
+</body>
+
+</html>
